@@ -1,0 +1,182 @@
+@media screen and (max-width:1024px) {
+    .header-top-section{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .header-navigation .navigation{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navigation .logo {
+        flex-basis: 50%;
+    }
+    .navigation .menu-bar {
+        flex-basis: 50%;
+        text-align: right;
+    }
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 31px;
+        font-size: 23px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #ccc;
+        cursor: pointer;
+        display: block;
+    }
+    .navigation nav {
+        position: fixed;
+        left: -100%;
+        width: 100%;
+        max-width: 300px;
+        min-height: 100vh;
+        top: 0;
+        background: var(--bg);
+        z-index: 99;
+        padding: 40px;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+    }
+    .navigation nav.active {
+        left:0px;
+    }
+    nav.active {
+        box-shadow: 1px 2px 6px #ccc, inset 2px 3px 12px #fff;
+    }
+    .navigation nav ul li {
+        display: block !important;
+        margin: 20px 0 !important;
+    }
+    .navigation nav ul li .dropdown-menu {
+        position: inherit;
+        opacity: 1;
+        visibility: visible;
+        top: 15px;
+    }
+    .navigation nav ul li:hover .dropdown-menu{
+        top:15px;
+    }
+    .dropdown.active .fa-chevron-right{
+        transform:rotate(90deg);
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+    }
+    .dropdown-menu{
+        max-height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        padding:0 10px !important;
+        opacity: 0;
+    }
+    .dropdown-menu.active{
+        max-height: 300px;
+        visibility:visible;
+        padding:20px 10px;
+        opacity: 1;
+    }
+}
+
+
+@media screen and (min-width:991px) {
+    .department-wiget.all-pages ul {
+        position: absolute;
+        top: 52px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background: #f3f3f3f5;
+      }
+      .department-wiget.all-pages {
+        position: relative;
+      }
+}
+
+@media screen and (max-width:992px) {
+    .copyright-left, .copyright-right img{
+        float: none;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    .copyright-right img{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .search-box {
+        flex-direction: column;
+        align-items: flex-start !important;
+      }
+      .search-form {
+        width: 100%;
+        margin-right:0px !important;
+      }
+      .contact-number {
+        margin-top: 20px;
+      }
+      .hero-section .search-box .search-form h3{
+          display: none;
+      }
+      .hero-section .search-box .search-form input{
+          width: 70%;
+      }
+      .hero-section .search-box .search-form .src-btn{
+          width:30%;
+      }
+     
+      /* ------------------------- SHOPPING CART PAGE ---------------- */
+
+      .shopping-cart-section .shopping-cart-table tr th{
+          font-size:16px;
+      }
+      .shopping-cart-section .shopping-cart-table tr td .prd-img{
+          flex-direction: column;
+      }
+      .shopping-cart-section .shopping-cart-table tr td .prd-img img{
+          margin-right:0;
+          margin-bottom:10px;
+          width:70px;
+      }
+      .shopping-cart-section .shopping-cart-table tr td{
+          font-size:15px;
+      }
+      .shopping-cart-section .shopping-cart-table tr td .cart .add-sub{
+          min-width: 105px;
+      }
+      .shopping-cart-section .shopping-cart-table tr td .prd-img h3{
+          font-size:15px;
+      }
+      .shopping-cart-section .shopping-cart-table tr td .cart .add-sub input{
+          width: 35px;
+      }
+      .shopping-btn, .shopping-btn2{
+          font-size:12px;
+          font-weight: 700;
+          letter-spacing: 0.6px;
+          padding: 10px 12px;
+      }
+
+      /* ======================= checkout page ================ */
+      .billing-section .billing-form .billing-input-box {
+          flex-direction: column;
+      }
+      .billing-section .billing-form .billing-input-box .input-box {
+          width:100%;
+      }
+}
+
+@media screen and (max-width:600px) {
+    .hero-section .hero-box .hero-content h1{
+        font-size:30px;
+    }
+    .product-description .product-tabs li {
+        margin: 0 4px;
+        font-size: 14px;
+    }
+}
